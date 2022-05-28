@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Semantic SEO</title>
+<link rel="canonical" href="Semantic-SEO.html" />
+<link rel="shortcut icon" href="img/1650852002914767.png" alt="Semantic SEO" />
+  <meta charset="utf-8">
+<meta name="title" content="Semantic SEO">
+<meta name="DC.title" lang="en" content="Semantic SEO">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+
+<meta name="description" content="The Entities’ Swissknife is Streamlit app for  Entity SEO and Semantic Publishing, supporting on-page optimization around entities recognized by Google NLP API or TextRazor API.">
+<meta name="keywords" content="Semantic SEOThe Entities Swssknife, Semantic Publishing, Semantic SEO, Structured Data, Schema Markup, Entites injection, Entity linking">
+<meta name="author" content="The Entities Swssknife">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kumbh+Sans:100,200,300,400,500,600,700,800,900&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+ <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+ <style type="text/css">
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+ html{ scroll-behavior: smooth;
+}
+    .navbar a{font-size: 18px;
+        font-weight: bold;
+        color: black!important;
+    }
+    .btn-md{
+            padding: 15px 30px;
+            border-radius: 0;
+    }
+    .mbr-section-subsection{
+        color: #999999;
+     font-size: 20px;
+    margin-bottom: 21px;
+    }
+    .mbr-section-h1{
+        font-size: 46px;
+    }
+    .text-grey{
+        color: #404040;
+    }
+    .content1{
+        font-size: 20px;
+         color: #606060;
+    }
+    .bg-brown{
+        background: #eae8e4;
+    }
+    .display-4{
+        font-size:45px;
+    }
+    .font-weight-400{
+        font-weight: 400;
+    }
+    body{
+        color: #232323;
+    }
+    .content2{
+        font-size: 17px;
+    }
+    li a{
+        color: #ff5722;
+
+    }
+    ul{
+        list-style: circle;
+    }
+    a{
+        text-decoration: none!important;
+    }
+    .content3{
+        color: #696969;
+            font-size: 17px;
+    }
+    .contentImg:hover{
+     box-shadow: 0 50px 50px -25px rgb(0 0 0 / 30%);
+    transform: rotate(-2deg) scale(1.03);
+
+    }
+    .contentImg{
+        transition: all 0.3s;
+        border-radius: 30px;
+    }
+    iframe{
+        border: none!important;
+    }
+    footer{
+        background: black;
+    color: white;
+    }
+    footer a{
+         color: white!important;
+
+    }   
+    .underlineShow {
+    font-weight: inherit;
+    background-image: linear-gradient(120deg, #ffc658 0%, #ffc658 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 30%;
+    background-position: 0 90%;
+    transition: background-size 0.2s ease-in;
+}
+.allShow:hover,.underlineShow:hover{
+        background-size: 100% 100%!important;
+     
+    background-image: linear-gradient(120deg, #ffc658 0%, #ffc658 100%)!important;
+    background-repeat: no-repeat!important;
+ 
+    background-position: 0 90%!important;
+    transition: background-size 0.2s ease-in!important;
+}
+.icon-button i{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.icon-button i:hover{
+    color: #7CE0D3;
+}
+.blackPara{
+        background: rgba(0,0,0,0.6);
+    text-align: center;
+}
+.blackPara *{
+    color: white!important;
+
+
+}
+.bg-image{
+       background-image: linear-gradient(rgba(0,0,0,0.48),rgba(0,0,0,0.48)),url('img/1650852473545198.jpg');
+    background-size: auto,cover;
+}
+
+</style>
+ 
+ 
+<script type='application/ld+json'> 
+{
+  "@context": "http://www.schema.org",
+  "@type": "1",
+    "name": "Studio Makoto Agenzia di Marketing e Comunicazione",
+   "url": "https://studiomakoto.it",
+ 
+  "sameAs": [
+      "https://studiomakoto.blogspot.com/ " ,    "https://www.youtube.com/channel/UC2J7eUGqZozl7j8r2QP0tTQ" ,    "https://www.facebook.com/studiomakotoagenziadicomunicazione" ,    "https://imgur.com/user/studiomakoto/posts    " ,    "https://staykeen.com/keen/2QI9vXVfU2Z6qVgeCtUs " ,    "https://www.linkedin.com/company/studiomakoto " ,    "https://www.pinterest.it/makotobologna/" ,    "https://www.reddit.com/user/Studio-Makoto/ " ,    "https://soundcloud.com/studio-makoto " ,    "https://twitter.com/makoto_bologna " ,    "http://studiomakotobologna.wordpress.com " ,    "https://www.yelp.it/biz/studio-makoto-agenzia-di-comunicazione-e-marketing-bologna " ,    "https://webagencystudiomakotobologna536.yahoosites.com/ " ,    "https://www.paginegialle.it/studiomakotoagenziadicomunicazioneemarketing-bologna " ,    "https://www.hotfrog.it/company/1525121137209344 " ,    "https://www.cylex-italia.it/bologna/studio-makoto-agenzia-di-comunicazione-e-marketing-15206261.html " ,    "https://www.paginebianche.it/studiomakotoagenziadicomunicazioneemarketing-bologna-70588eac-c268-489c-853b-041299211ac3 " ,    "https://aziende.virgilio.it/web-agency/bologna-bo/studiomakotoagenziadicomunicazioneemarketing-bologna " ,    "https://trova-aperto.it/bologna/studio-makoto-agenzia-di-comunicazione-e-marketing-1881275 " ,    "https://firmania.it/bologna/studio-makoto-agenzia-di-comunicazione-e-marketing-3669328 " ,    "https://www.misterimprese.it/emilia-romagna/bologna/bologna/pubblicita-marketing-e-traduzione/2585169.html " ,    "http://www.lacartes.com/business/Studio-Makoto/1954082 " ,    "https://www.cgmimm.com/internet-marketing/studio-makoto-agenzia-di-marketing-e-comunicazione/" ,    "https://www.facebook.com/studiomakotoagenziadicomunicazione" ,    "https://www.linkedin.com/company/studiomakoto " ,    "https://www.youtube.com/channel/UC2J7eUGqZozl7j8r2QP0tTQ" ,    "https://twitter.com/makoto_bologna" 
+
+  ],
+  
+  "logo": "img/1650852002914767.png",
+  "image": "img/1650852002914767.png",
+ 
+
+ 
+  "address": {
+
+    "@type": "PostalAddress",  
+    "streetAddress": "Via del Borgo di San Pietro 22",  
+    "addressLocality": "Bologna", 
+  
+    "addressRegion": "Emilia-Romagna"  ,  
+    "postalCode": "40126"   
+   
+  } , 
+    
+  "hasMap": "https://www.google.com/maps/place/Studio+Makoto+Agenzia+di+Marketing+e+Comunicazione/@44.4991384,11.3482797,15z/data=!4m5!3m4!1s0x0:0x1d1063f25dc6a479!8m2!3d44.4991384!4d11.3482797"
+  }
+ </script>
+
+
+<script type="application/ld+json">
+{
+  "@type": "WebPage",
+  "@context": "http://www.schema.org",
+  "temporalCoverage": "https://studiomakoto.it/digital-marketing/entity-seo-semantic-publishing/",
+  "significantLink": "https://studiomakoto.it/digital-marketing/entity-seo-semantic-publishing/",
+  "relatedLink": "https://studiomakoto.it/digital-marketing/entity-seo-semantic-publishing/",
+  "lastReviewed": "2021-12-01",
+  "mainContentOfPage": {
+    "about": {
+
+
+      "sameAs": "https://studiomakoto.it/digital-marketing/entity-seo-semantic-publishing/",
+
+
+      "url": "",
+      "additionalType": "https://studiomakoto.it/digital-marketing/entity-seo-semantic-publishing/",
+      "name": "The Entities Swssknife",
+      "identifier": "https://studiomakoto.it/digital-marketing/entity-seo-semantic-publishing/",
+      "description": "The Entities Swssknife, Semantic Publishing",
+      "disambiguatingDescription": "The Entities Swssknife, Semantic Publishing, Semantic SEO, Structured Data, Schema Markup, Entites injection, Entity linking",
+      "alternateName": "Semantic Publishing"
+    },
+    "accessibilitySummary": "The Entities Swssknife",
+    "associatedMedia": {
+      "embedUrl": "https://www.youtube.com/watch?v=1UWoYESenPs",
+      "contentUrl": "https://www.youtube.com/watch?v=1UWoYESenPs",
+      "about": {
+        "sameAs": "https://studiomakoto.it/digital-marketing/entity-seo-semantic-publishing/",
+        "url": "Semantic-SEO.html"
+      }
+    }
+  },
+  "mainEntityOfPage": "https://studiomakoto.it/digital-marketing/entity-seo-semantic-publishing/",
+  "keywords": ["The Entities Swssknife", "Semantic Publishing", "Semantic SEO", "Structured Data", "Schema Markup", "Entites injection", "Entity linking"],
+  "award": [
+    "Best The Entities Swssknife", "Best Semantic Publishing", "Best Semantic SEO", "Best Structured Data", "Best Schema Markup", "Best Entites injection", "Best Entity linking"
+  ],
+  "teaches": ["The Entities Swssknife","Semantic Publishing","Semantic SEO","Structured Data","Schema Markup","Entites injection","Entity linking"],
+  "offers": [{
+    "sku": "The Entities Swssknife",
+    "availabilityStarts": "2022-05-28 00:25:05",
+    "priceCurrency": "USD"
+  },
+  {
+    "sku": "Semantic Publishing",
+    "availabilityStarts":"2022-05-28 00:25:05",
+    "priceCurrency": "USD"
+  }
+ ,
+ {
+    "sku": "Semantic SEO",
+    "availabilityStarts":"2022-05-28 00:25:05",
+    "priceCurrency": "USD"
+  },
+  {
+    "sku": "Structured Data",
+    "availabilityStarts":"2022-05-28 00:25:05",
+    "priceCurrency": "USD"
+  },
+  {
+    "sku": "Schema Markup",
+    "availabilityStarts":"2022-05-28 00:25:05",
+    "priceCurrency": "USD"
+  },
+  {
+    "sku": "Entites injection",
+    "availabilityStarts": "2022-05-28 00:25:05",
+    "priceCurrency": "USD"
+  },
+  {
+    "sku": "Entity linking",
+    "availabilityStarts":"2022-05-28 00:25:05",
+    "priceCurrency": "USD"
+  }  
+  ],
+  "educationalUse": ["The Entities Swssknife","Semantic Publishing", "Semantic SEO", "Structured Data", "Schema Markup", "Entites injection", "Entity linking"],
+  "text": "The Entities Swssknife, Semantic Publishing, Semantic SEO, Structured Data, Schema Markup, Entites injection, Entity linking",
+  "workExample": {
+    "about": {
+      "sameAs": "https://studiomakoto.it/digital-marketing/entity-seo-semantic-publishing/",
+      "url": "Semantic-SEO.html"
+    }
+  },
+  "citation": {
+    "@type": "CreativeWork",
+    "about": {
+      "url": "Semantic-SEO.html",
+      "sameAs": "https://studiomakoto.it/digital-marketing/entity-seo-semantic-publishing/"
+    }
+  }
+}
+</script>
+
+</head>
+    
+<body>
+ <nav class="navbar navbar-expand-lg navbar-light bg-white px-md-5 pt-3 pb-3">
+ 
+   <a class="navbar-brand" href="Semantic-SEO.html">
+        <img alt="" src="img/1650852002914767.png" id="The Entities Swssknife" data-test-source="The Entities Swssknife" data-test-pro-id="The Entities Swssknife" data-test-pro-name="The Entities Swssknife" data-test="The Entities Swssknife" title="The Entities Swssknife" alt="Semantic SEO"  width="150px"  >
+      </a>
+
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      
+     
+             
+          <li class="mt-2  nav-item pr-md-4"><a  class="nav-link allShow   " href="Semantic-SEO.html"  rel="nofollow">Semantic SEO</a></li>
+       
+      
+
+               <li class="nav-item  ">
+      <a class="btn btn-md btn-warning display-4" href="https://studiomakoto.it/studio-makoto-web-agency-bologna/" rel="nofollow">Contact Us</a>
+         </li>
+         </ul>
+     
+  </div>
+</nav>
+ 
+<div class="container-fluid  bg-image pb-5">
+    <div class="container pt-5 pb-5 ">
+        <div class="row">
+            <div class="col-lg-12 text-center "  id="The Entities Swssknife">
+          
+                <h1 class="mbr-section-h1  text-white mb-0 "> 
+                                            <a class="allShow text-white" href="https://studiomakoto.it/digital-marketing/entity-seo-semantic-publishing/">
+
+
+                        Semantic SEO                                </a>
+                      </h1>       <h2 class="mbr-section-subsection text-white "><b>The Entities Swssknife</b></h2></div>
+
+             
+
+            <div class="col-lg-8 pt-5">
+               
+                <iframe width="100%" height="400" style="border-radius: 5px;" src="https://youtube.com/embed/1UWoYESenPs" title="The Entities Swssknife"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>The Entities Swssknife</iframe>
+ 
+            </div>
+                        <div class=" text-white blackPara col-lg-4 m-auto  " style>
+                <p class="content1 text-white blackPara"  >  <p>The Entities&#39; Swissknife: the application that makes your job easier<br />
+The Entities&#39; Swissknife is an app established in python and totally committed to Entity SEO as well as Semantic Publishing, supporting on-page optimization around entities recognized by Google NLP API or TextRazor API. In addition to Entity extraction, The Entities&#39; Swissknife allows Entity Linking by immediately producing the necessary Schema Markup to explicate to search engines which entities the material of our websites refers to.</p>
+
+<p>The Entities&#39; Swissknife can aid you to:<br />
+recognize just how NLU (Natural Language Understanding) formulas &quot;recognize&quot; your text so you can enhance it till the subjects that are essential to you have the very best relevance/salience score;<br />
+assess your rivals&#39; pages in SERPs to discover feasible spaces in your material;<br />
+create the semantic markup in JSON-LD to be injected in the schema of your page to make explicit to search engines what subjects your web page is about;<br />
+examine brief texts such as duplicate an ad or a bio/description for a concerning page. You can fine-tune the message until Google identifies with enough confidence the entities that pertain to you as well as designate them the right salience rating.<br />
+Composed by Massimiliano Geraci for Studio Makoto, The Entities&#39; Swissknife has actually been publicly released on Streamlit, a platform that because 2020 has guaranteed itself a reputable place among data scientists using Python.</p>
+
+<p>It might be valuable to clarify what is implied by Entity SEO, Semantic Publishing, Schema Markup, and after that study utilizing The Entities&#39; Swissknife.</p>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid py-4 bg-brown">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-5">
+                <h2  class="display-4 mt-2 font-weight-400" id="Semantic Publishing">Semantic Publishing   —</h2>
+                
+                <ul>
+                         <li><a class="" href="#The Entities Swssknife">The Entities Swssknife</a></li>
+              <li><a class="" href="#Semantic Publishing">Semantic Publishing</a></li>
+      <li><a class="" href="#Semantic SEO">Semantic SEO</a></li>
+      <li><a class="" href="#Structured Data">Structured Data</a></li>
+      
+  <li><a class="" href="#Schema Markup">Schema Markup</a></li>
+    
+  <li><a class="" href="#Entites injection">Entites injection</a></li>
+    <li><a class="" href="#Entity linking">Entity linking</a></li>
+                    </ul>
+            </div>
+            <div class="col-lg-7 pt-5 content2">
+                <p> <p>Entity SEO<br />
+Entity SEO is the on-page optimization task that takes into consideration not the keywords but the entities (or sub-topics) that comprise the web page&#39;s topic.<br />
+The watershed that notes the birth of the Entity SEO is represented by the write-up released in the main Google Blog, which reveals the development of its Knowledge Graph.<br />
+The popular title &quot;from strings to points&quot; clearly expresses what would have been the key pattern in Search in the years to find at Mountain view.</p>
+
+<p>To understand and streamline points, we can say that &quot;things&quot; is more or less a basic synonym for &quot;entity.&quot;.<br />
+Generally, entities are items or ideas that can be distinctly determined, frequently people, areas, things, as well as things.</p>
+
+<p>It is simpler to understand what an entity is by referring to Topics, a term Google favors to utilize in its interactions for a wider audience.<br />
+On closer examination, subjects are semantically wider than things. Subsequently, things-- things-- that come from a subject, as well as contribute to defining it, are entities.<br />
+Therefore, to estimate my dear teacher Umberto Eco, an entity is any kind of concept or things belonging to the globe or one of the many &quot;possible globes&quot; (literary or fantasy worlds).</p>
+</p>
+                                 <p><a href="Semantic-SEO.html">Semantic SEO</a></p>
+                         </div>
+        </div>
+    </div>
+</div>
+
+
+    
+<div class="container-fluid py-4 bg-white">
+    <div class="container py-5">
+        <div class="row" id="">
+                
+                    
+            <div class="col-lg-6 pt-5 ">
+                 <h2 class="display-4 mt-2 font-weight-400" id="Semantic SEO">Semantic SEO                </h2>
+                <p class="content3"> <p>Semantic posting.<br />
+Semantic Publishing is the activity of publishing a page on the web to which a layer is added, a semantic layer in the form of structured data that describes the web page itself. Semantic Publishing assists search engines, voice aides, or other smart agents recognize the page&#39;s definition, structure, as well as context, making information retrieval and data assimilation extra effective.<br />
+Semantic Publishing relies on taking on organized data and connecting the entities covered in a file to the very same entities in various public data sources.</p>
+
+<p>As it shows up printed on the display, a websites has information in a disorganized or poorly structured format (e.g., the department of sub-paragraphs and paragraphs) designed to be recognized by people.</p>
+ </p>
+            </div>
+                         <div class="col-lg-6    pt-5">
+                      
+                
+                           <iframe width="100%" height="600"  style="border-radius: 5px;" src="https://studiomakoto.it" title="The Entities Swssknife"  frameborder="0"   >Semantic SEO</iframe>
+
+ 
+                                    </div>
+                        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid py-4 bg-brown">
+      <div class="container py-5">
+        <div class="row" id="">
+                
+                                  <div class="col-lg-6    pt-5">
+                                        <img class="w-100 contentImg" src="img/1650853633951779.jpg" alt="Structured Data">
+                                            </div>
+                
+            <div class="col-lg-6 pt-5 ">
+                 <h2 class="display-4 mt-2 font-weight-400" id="Structured Data">Structured Data                </h2>
+                <p class="content4"> <p>Distinctions in between a Lexical Search Engine and a Semantic Search Engine.<br />
+While a traditional lexical search engine is approximately based on matching keywords, i.e., straightforward message strings, a Semantic Search Engine can &quot;comprehend&quot;-- or at the very least try to-- the significance of words, their semantic relationship, the context in which they are inserted within a paper or a query, therefore achieving a more precise understanding of the customer&#39;s search intent in order to create even more pertinent results.<br />
+A Semantic Search Engine owes these capabilities to NLU algorithms, Natural Language Understanding, as well as the presence of structured data.</p>
+
+<p>Topic Modeling and also Content Modeling.<br />
+The mapping of the distinct systems of material (Content Modeling) to which I referred can be usefully carried out in the layout phase as well as can be connected to the map of topics dealt with or treated (Topic Modeling) and to the structured information that shares both.<br />
+It is a remarkable method (let me understand on Twitter or LinkedIn if you would like me to write about it or make an impromptu video clip) that allows you to create a site and create its web content for an extensive therapy of a subject to obtain topical authority.<br />
+Topical Authority can be referred to as &quot;deepness of competence&quot; as perceived by internet search engine. In the eyes of Search Engines, you can come to be a reliable source of information concerning that network of (Semantic) entities that specify the topic by constantly writing initial high-quality, comprehensive content that covers your broad subject.</p>
+
+<p>Entity linking/ Wikification.<br />
+Entity Linking is the procedure of recognizing entities in a text record as well as associating these entities to their one-of-a-kind identifiers in a Knowledge Base.<br />
+When the entities in the message are mapped to the entities in the Wikimedia Foundation resources, Wikipedia and Wikidata, wikification happens.</p>
+ </p>
+            </div>
+                   </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="container-fluid py-4 bg-white">
+    <div class="container py-5">
+        <div class="row"  id="Schema Markup">
+                      
+                                     <div class="col-lg-6  pt-5 ">
+                 <h2 class="display-4 mt-2 font-weight-400" id="Schema Markup">Schema Markup    
+                </h2>
+                <p class="content3">  <p>The Entities&#39; Swissknife helps you structure your material and make it less complicated for search engines to understand by extracting the entities in the text that are then wikified.<br />
+If you select the Google NLP API, entity linking will certainly additionally occur to the corresponding entities in the Google Knowledge Graph.</p>
+
+<p>The &quot;about,&quot; &quot;states,&quot; and &quot;sameAs&quot; residential properties of the markup schema.<br />
+Entities can be injected right into semantic markup to explicitly state that our file is about some specific place, item, brand name, concept, or things.<br />
+The schema vocabulary buildings that are utilized for Semantic Publishing which act as a bridge between organized information and Entity SEO are the &quot;about,&quot; &quot;points out,&quot; as well as &quot;sameAs&quot; residential properties.</p>
+
+<p>These properties are as powerful as they are however underutilized by SEOs, specifically by those who utilize structured data for the single purpose of being able to obtain Rich Results (FAQs, review stars, item attributes, video clips, interior site search, etc) created by Google both to boost the look as well as capability of the SERP however additionally to incentivize the fostering of this standard.<br />
+Proclaim your paper&#39;s key topic/entity (websites) with the around building.<br />
+Instead, make use of the discusses residential or commercial property to declare secondary subjects, even for disambiguation functions.</p>
+
+<p>Exactly how to correctly use the buildings about and states.<br />
+The concerning residential property should refer to 1-2 entities at most, and these entities ought to exist in the H1 title.<br />
+References must disappear than 3-5, depending upon the write-up&#39;s length. As a general policy, an entity (or sub-topic) ought to be clearly stated in the markup schema if there is a paragraph, or a sufficiently substantial part, of the document devoted to the entity. Such &quot;mentioned&quot; entities should additionally exist in the relevant headline, H2 or later on.</p>
+</p>
+            </div>
+             
+                          <div class="col-lg-6    pt-5">
+                                                    <img class="w-100 contentImg" src="img/1650853827763164.jpg" alt="Schema Markup">
+                                            </div>
+                         </div>
+    </div>
+</div>
+
+
+
+ 
+
+
+<div class="container-fluid py-4 bg-brown">
+        <div class="container py-5">
+        <div class="row" id="">
+                
+                                  <div class="col-lg-6    pt-5">
+                                                   <img class="w-100 contentImg" src="img/1650853834434047.jpg" alt="Entites injection">
+                                            </div>
+                
+            <div class="col-lg-6 pt-5 ">
+                 <h2 class="display-4 mt-2 font-weight-400" id="Entites injection">Entites injection                </h2>
+                <p class="content6"> <p>As soon as you have actually chosen the entities to make use of as the worths of the states and regarding residential properties, The Entities&#39; Swissknife executes Entity-Linking, via the sameAs home and also creates the markup schema to nest right into the one you have developed for your page.</p>
+
+<p>Exactly how to Use The Entities&#39; Swissknife.<br />
+You must enter your TextRazor API keyword or submit the credentials (the JSON documents) pertaining to the Google NLP API.<br />
+To get the API keys, sign up for a free registration to the TextRazor web site or the Google Cloud Console [complying with these simple instructions]<br />
+Both APIs supply a complimentary everyday &quot;phone call&quot; fee, which is sufficient for personal usage.</p>
+
+<p>When to choose TextRazor APIs or Google NLP APIs.<br />
+From the ideal sidebar, you can choose whether to use the TextRazor API or the Google NLP API from the particular dropdown food selections. You can determine if the input will certainly be a text or an url.</p>
+
+<p>Entity SEO e Semantic Publishing:.<br />
+Selezionare le API TextRazor - Studio Makoto Agenzia di Marketing e Comunicazione.<br />
+Select API TextRazor-- Studio Makoto Agenzia di Marketing e Comunicazione.<br />
+I choose to make use of the TextRazor API to infuse entities right into structured information and then for outright Semantic Publishing. These APIs draw out both the URI of the loved one page on Wikipedia as well as the ID (the Q) of the entries on Wikidata.</p>
+
+<p>If you want including, as residential or commercial property sameAs of your schema markup, the Knowledge Panel URL related to the entity need to be explicated, beginning with the entity ID within the Google Knowledge Graph, after that you will certainly require to utilize the Google API.</p>
+
+<p>Duplicate Sandbox.<br />
+If you want to make use of The Entities&#39; Swissknife as a copy sandbox, i.e., you want to check just how a sales copy or a product summary, or your bio in your Entity home is understood, then it is much better to make use of Google&#39;s API considering that it is by it that our duplicate will certainly need to be comprehended.</p>
+
+<p>Entity SEO e Semantic Publishing: The Entities&#39; Swissknife come Copy sandbox - Studio Makoto Agenzia di Marketing e Comunicazione.<br />
+The Entities&#39; Swissknife as a Copy sandbox-- Studio Makoto Agenzia di Marketing e Comunicazione.<br />
+Various other alternatives.<br />
+You can only extract entities from headline1-4, meta_description, as well as meta_title.<br />
+By default, The Entities&#39; Swissknife, which uses Wikipedia&#39;s public API to scrap entity definitions, is limited to save time, to only chosen entities as around as well as discusses worths. You can check the choice to junk the summaries of all extracted entities as well as not simply the selected ones.</p>
+
+<p>If you choose the TextRazor API, there is the opportunity to extract likewise Categories and Topics of the file according to the media subjects taxonomies of greater than 1200 terms, curated by IPCT.<br />
+ </p>
+ </p>
+            </div>
+                   </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="container-fluid py-4 bg-white">
+    <div class="container py-5">
+        <div class="row" id="Entity linking">
+                              <div class="col-lg-6 pt-5 ">
+                 <h2 class="display-4 mt-2 font-weight-400">Entity linking  
+                </h2>
+                <p class="content3"><p>Entity SEO e Semantic Publishing: API TextRazor: estrarre Categorie e Topic - Studio Makoto Agenzia di Marketing e Comunicazione.<br />
+API TextRazor: Extract Entities and Topics-- Studio Makoto Agenzia di Marketing e Comunicazione.<br />
+Entity SEO e Semantic Publishing:.<br />
+Tabella delle Categorie e dei Topic - Studio Makoto Agenzia di Marketing e Comunicazione.<br />
+Top 10 most regular entities-- Studio Makoto Agenzia di Marketing e Comunicazione.<br />
+Computation of entity regularity and possible backups.<br />
+The count of events of each entity is received the table, and a details table is scheduled for the top 10 most regular entities.<br />
+Although a stemmer (Snowball library) has been applied to neglect the masculine/feminine and also singular/plural forms, the entity regularity count refers to the supposed &quot;stabilized&quot; entities and not to the strings, the specific words with which the entities are revealed in the message.<br />
+For example, if in the message it is present words SEO, the matching normalized entity is &quot;Search Engine Optimization,&quot; and the regularity of the entity in the message might result falsified, or likewise 0, in the case in which the message, the entity is always expressed through the string/keyword SEO. The old key phrases are absolutely nothing else than the strings through which the entities are revealed.</p>
+
+<p>In conclusion, The Entities&#39; Swissknife is a powerful tool that can aid you enhance your online search engine positions via semantic publishing and also entity connecting that make your website internet search engine pleasant.</p>
+  </p>
+            </div>
+                            <div class="col-lg-6    pt-5">
+                                         <img class="w-100 contentImg" src="img/1650853873174130.jpg" alt="Entity linking">
+                                            </div>
+                        </div>
+    </div>
+</div>
+
+
+<div class="container px-0">
+
+<a class="twitter-moment" href="https://twitter.com/i/moments/1505381403961221120?ref_src=twsrc%5Etfw "></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+
+<div class="container-fluid px-0">
+  
+ <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11383.12704721176!2d11.3482797!3d44.4991384!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d1063f25dc6a479!2sStudio%20Makoto%20Agenzia%20di%20Marketing%20e%20Comunicazione!5e0!3m2!1sen!2sit!4v1650852857555!5m2!1sen!2sit" width="100%" height="480">Semantic SEO</iframe>     
+
+
+
+</div>
+
+  
+<footer>
+    <div class="container py-4 pt-5" style="max-width: 1400px;">
+        <div class="row">
+  <div class="col-lg-3">
+ 
+                  <p>Studio Makoto Agenzia di Marketing e Comunicazione</p>
+                        <p>PHONE : +390512800761</p>
+      
+            <p>EMAIL : info@studiomakoto.it</p>
+      
+          
+     <p>City : Bologna</p>
+      
+          
+     <p>State : Emilia-Romagna</p>
+      
+          
+     <p>Zip : 40126</p>
+      
+
+          
+     <p>ADDRESS : Via del Borgo di San Pietro 22</p>
+               
+     <p> <a   class="  allShow"  href="https://www.google.com/maps/place/Studio+Makoto+Agenzia+di+Marketing+e+Comunicazione/@44.4991384,11.3482797,15z/data=!4m5!3m4!1s0x0:0x1d1063f25dc6a479!8m2!3d44.4991384!4d11.3482797" rel="nofollow"> Google Business Profile</a>  </p>
+               
+        <p><a   class="  allShow"  href="https://sites.google.com/view/web-agency-studio-makoto/home" rel="nofollow">Google Business Website   </a></p>
+      
+    
+        <p>Company Website : <a   class="  allShow"  href="https://studiomakoto.it" rel="nofollow">https://studiomakoto.it</a></p>
+      
+    
+    
+       </div>
+ 
+     <div class="col-lg-3">
+      
+             
+
+<p><a class="  allShow" href="" rel="nofollow" target="_blank"></a></p>
+<p><a class="  allShow"  href="" rel="nofollow" target="_blank"></a></p>
+<p><a class="  allShow" href="" rel="nofollow" target="_blank"></a></p>
+<p><a class="  allShow" href="" rel="nofollow" target="_blank"></a></p>
+<p><a class="  allShow"  href="" rel="nofollow" target="_blank"></a></p>
+</div>
+
+ 
+<div class="col-lg-3">
+         
+
+<p><a  class="  allShow" href="" rel="nofollow" target="_blank"></a></p>
+<p><a  class="  allShow" href="" rel="nofollow" target="_blank"></a></p>
+<p><a  class="  allShow" href="" rel="nofollow" target="_blank"></a></p>
+
+  
+ 
+<p><a href="sitemap.html" class="  allShow"  >Sitemap</a></p>
+ 
+<p><a href="privacy-policy.html" class="  allShow"  >Privacy Policy</a></p>
+
+<p>
+
+ </p>
+</div>
+
+ 
+<div class="col-lg-3">
+            <div class="social">
+                                    <p class="sub">Follow us</p>
+                  
+                                   <a href="https://www.facebook.com/studiomakotoagenziadicomunicazione" class="icon-button facebook"  rel="nofollow"   ><i class="fa fa-facebook"></i><span></span></a>
+                                                           <a href="https://www.linkedin.com/company/studiomakoto " class="icon-button pinterest" rel="nofollow"  ><i class="fa fa-linkedin"></i><span></span></a>
+                                                                             <a href="https://www.youtube.com/channel/UC2J7eUGqZozl7j8r2QP0tTQ" class="icon-button youtube"   rel="nofollow"  ><i class="fa fa-youtube"></i><span></span></a>
+                                                          <a href="https://twitter.com/makoto_bologna" class="icon-button twitter"  rel="nofollow" ><i class="fa fa-twitter"></i><span></span></a>
+                
+                                                         
+                      
+            </div>
+    </div>
+</div>
+    </div>
+    
+    
+    </footer>
+
+</body>
+
+</html>
